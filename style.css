@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(162, 6, 252);
+}
+#main-c{
+    background-color: white;
+    border-radius: 10px;
+}
+#toinput{
+    border: none;
+    background:transparent;
+    outline: none;
+    background: rgb(234, 234, 234);
+    border-radius: 10px;
+    /* width:70%; */
+}
+button{
+    border: none;
+    outline:none;
+    border-radius: 10px;
+    background-color: orange;
+    color:white;
+}
+#task{
+    border-radius: 5px;
+}
+ul li{
+    list-style: none;
+    position: relative;
+}
+/* ul li::before{
+    content: '';
+    position: absolute;
+    height: 38px;
+    width: 35px;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+} */
+/* .todo{
+    background-color: white; 
+    max-width: 540px;
+    border-radius: 10px;
+    margin: auto;
+}
+h3{
+    text-align: center;
+}
+p{
+    margin-left: 5px;
+}
+.input-holder{
+    background-color:rgb(237, 237, 237);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-holder input{
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding:5px;
+}
+button{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: orange;
+    padding: 5px 15px;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+ul li::before{
+    background-image: url(icons8-right-arrow-64.png);
+} */
