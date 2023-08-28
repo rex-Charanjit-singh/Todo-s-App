@@ -2,6 +2,8 @@ const todo = document.getElementById("toinput");
 const btn = document.getElementById("inbtn");
 const btnchange = document.getElementById("inbtn").innerHTML;
 const data = document.getElementById("rec");
+let userName = document.getElementById("user");
+userName.innerText = "Rishi";
 let userArray = [];
 let edit_id = null;
 
