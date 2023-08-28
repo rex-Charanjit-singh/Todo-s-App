@@ -25,16 +25,9 @@
       <div class="row">
         <h1 class="fs-1 my-4">Welcome, <span class="fs-2">name</span></h1>
         <div class="row">
-          <div class="col-lg-11 text-center" id="input-holder">
+          <div class="col" id="input-holder">
             <input class="ps-2 ps-lg-2 p-1" type="text" id="toinput" placeholder="What's pending today">
-            <!-- <select name="tasks" id="task">
-              <option value="first" selected>All</option>
-              <option value="second">Pending</option>
-              <option value="third">Completed</option>
-            </select> -->
-          </div>
-          <div class="col-lg-1" id="input-holder">
-            <button onclick="addtask()" class="px-4 py-1" ><i class="fa-solid fa-plus"></i></button>
+            <button onclick="addtask()" id="inbtn" class="px-4 py-1" ><i class="fa-solid fa-plus"></i></button>
             <!-- <select name="tasks" id="task">
               <option value="first" selected>All</option>
               <option value="second">Pending</option>
@@ -44,11 +37,22 @@
           <p class="mt-4 fs-4">Your todo's</p>
         </div>
       </div>
-      <ul class="fs-4" id="todo-list">
-        <!-- <li class="py-2"><i class="fa-solid fa-arrow-right-long pe-2"></i>task inside todo list
-          <button class="mx-4 px-4"><i class="fa-regular fa-pen-to-square"></i></button>
-          <button class="px-4"><i class="fa-solid fa-trash-can"></i></button></li>
-      </ul>
+      <table class="table table-bordered mb-4">
+        <thead>
+          <tr>
+            <th scope="col">Sl.</th>
+            <th scope="col" style="width: 60%">First</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody id="rec">
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td style="width: 60%">Mark</td>
+            <td><i class="btn btn-success fa-regular fa-pen-to-square"></i> <i class="btn btn-success fa-solid fa-trash"></i></td>
+          </tr> -->
+        </tbody>
+      </table>
     </div>
     <!-- bootstrap javascript -->
     <script
