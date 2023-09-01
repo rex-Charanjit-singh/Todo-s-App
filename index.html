@@ -22,37 +22,39 @@
   </head>
   <body>
     <div class="container mt-5" id="main-c">
-      <div class="row">
-        <h1 class="fs-1 my-4">Welcome, <span class="fs-2" id="user"></span></h1>
-        <div class="row row-1">
-          <div class="col" id="input-holder">
-            <input class="ps-2" type="text" id="toinput" placeholder="What's pending today">
-            <button id="inbtn" class="px-4 py-1" ><i class="fa-solid fa-plus"></i></button>
-            <!-- <select name="tasks" id="task">
-              <option value="first" selected>All</option>
-              <option value="second">Pending</option>
-              <option value="third">Completed</option>
-            </select> -->
+      <div class="container mt-5" id="sec-c">
+        <div class="row">
+          <h1 class="fs-1 my-4">Welcome, <span class="fs-2" id="user"></span></h1>
+          <div class="row row-1">
+            <div class="col" id="input-holder">
+              <input class="ps-2" type="text" id="toinput" placeholder="What's pending today">
+              <button id="inbtn" class="px-4 py-1" ><i class="fa-solid fa-plus"></i></button>
+              <!-- <select name="tasks" id="task">
+                <option value="first" selected>All</option>
+                <option value="second">Pending</option>
+                <option value="third">Completed</option>
+              </select> -->
+            </div>
+            <p class="mt-4 fs-4">Your todo's</p>
           </div>
-          <p class="mt-4 fs-4">Your todo's</p>
         </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Sl.</th>
+              <th scope="col" style="width: 60%">Tasks</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody id="rec">
+            <!-- <tr>
+              <th scope="row">1</th>
+              <td style="width: 60%">Mark</td>
+              <td><i class="btn btn-success fa-regular fa-pen-to-square"></i> <i class="btn btn-success fa-solid fa-trash"></i></td>
+            </tr> -->
+          </tbody>
+        </table>
       </div>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">Sl.</th>
-            <th scope="col" style="width: 60%">Tasks</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead>
-        <tbody id="rec">
-          <!-- <tr>
-            <th scope="row">1</th>
-            <td style="width: 60%">Mark</td>
-            <td><i class="btn btn-success fa-regular fa-pen-to-square"></i> <i class="btn btn-success fa-solid fa-trash"></i></td>
-          </tr> -->
-        </tbody>
-      </table>
     </div>
     <!-- bootstrap javascript -->
     <script
