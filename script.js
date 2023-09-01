@@ -3,7 +3,7 @@ const btn = document.getElementById("inbtn");
 const btnchange = document.getElementById("inbtn").innerHTML;
 const data = document.getElementById("rec");
 let userName = document.getElementById("user");
-userName.innerText = "Rishi";
+userName.innerText = "Mr.Rishi singh";
 let userArray = [];
 let edit_id = null;
 
@@ -16,17 +16,21 @@ displayInfo();
 
 btn.onclick=()=>{
     const name = todo.value;
-    if(edit_id!=null){
-        //edit
-        userArray.splice(edit_id, 1, {'name': name});
-        edit_id = null;
+    if(name!=''){
+        if(edit_id!=null){
+            //edit
+            userArray.splice(edit_id, 1, {'name': name});
+            edit_id = null;
+        } else {
+            // insert
+            userArray.unshift({'name': name});
+        }
+       saveInfo(userArray);
+       todo.value = '';
+       btn.innerHTML = btnchange;
     } else {
-        // insert
-        userArray.push({'name': name});
+        alert("You must write something");
     }
-   saveInfo(userArray);
-   todo.value = '';
-   btn.innerHTML = btnchange;
 }
 
 function saveInfo(ary){
