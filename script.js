@@ -3,7 +3,7 @@ const btn = document.getElementById("inbtn");
 const btnchange = document.getElementById("inbtn").innerHTML;
 const data = document.getElementById("rec");
 let userName = document.getElementById("user");
-userName.innerText = "Mr.Rishi singh";
+userName.innerText = "To the todo's app";
 let userArray = [];
 let edit_id = null;
 

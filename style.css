@@ -42,3 +42,7 @@ ul li{
     list-style: none;
     position: relative;
 }
+
+#foot{
+    text-align: right;
+}
