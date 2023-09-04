@@ -46,3 +46,25 @@ ul li{
 #foot{
     text-align: right;
 }
+
+@media(max-width: 380px){
+    #lead{
+        font-size: 25px;
+    }
+    #user{
+        font-size: 19px;
+    }
+    .btn{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
