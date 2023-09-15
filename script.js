@@ -1,6 +1,7 @@
 const todo = document.getElementById("toinput");
 const btn = document.getElementById("inbtn");
 const btnchange = document.getElementById("inbtn").innerHTML;
+const edit_alert = document.getElementById("edit_alert");
 const data = document.getElementById("rec");
 let userName = document.getElementById("user");
 userName.innerText = "To the todo's app";
@@ -51,7 +52,8 @@ function displayInfo(){
     data.innerHTML = state;
 }
 
-function editInfo(id){    
+function editInfo(id){
+    edit_alert.innerText = "Alert! edit in search bar."   
     edit_id = id;
     todo.value = userArray[id].name;
     btn.innerHTML = '<i class="fa-solid fa-floppy-disk"></i>';

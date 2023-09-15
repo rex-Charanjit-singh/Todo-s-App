@@ -57,6 +57,9 @@ ul li{
     .btn{
         font-size: 10px;
     }
+    #edit_alert{
+        margin-top: 34px;
+    }
 }
 
 
