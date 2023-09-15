@@ -38,6 +38,7 @@ function saveInfo(ary){
     let str = JSON.stringify(userArray);
     localStorage.setItem('user',str);
     displayInfo();
+    edit_alert.innerText = "" 
 }
 
 function displayInfo(){
