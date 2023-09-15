@@ -38,7 +38,7 @@ function saveInfo(ary){
     let str = JSON.stringify(userArray);
     localStorage.setItem('user',str);
     displayInfo();
-    edit_alert.innerText = "" 
+    edit_alert.innerText = "";
 }
 
 function displayInfo(){
@@ -54,7 +54,7 @@ function displayInfo(){
 }
 
 function editInfo(id){
-    edit_alert.innerText = "Alert! edit in search bar."   
+    edit_alert.innerText = "Alert! edit in search bar.";  
     edit_id = id;
     todo.value = userArray[id].name;
     btn.innerHTML = '<i class="fa-solid fa-floppy-disk"></i>';
